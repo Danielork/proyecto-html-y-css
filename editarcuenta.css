@@ -33,22 +33,15 @@ main {
     width: 350px;
     align-self: center;
     align-items: center;
-    flex-wrap: wrap;
 }
-.logo {
-    width: 150px;
-    margin: 30px 0;
-    display: none;
+.container-form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .title {
     font-size: var(--lg);
-}
-.subtitle {
-    font-weight: 300;
-    font-size: var(--md);
-    color: var(--very-light-pink);
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 form {
     display: flex;
@@ -60,26 +53,32 @@ form {
     font-weight: bold;
     margin-bottom: 4px;
 }
-.input {
+.value {
     background-color: var(--text-input-field);
-    height: 50px;
+    color: var(--very-light-pink);
+    height: 40px;
+    width: 100%;
+    font-size: var(--md);
+    margin: 8px 0 30px 0;
     padding: 10px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    font-size: var(--sm);
 }
 .buttom {
-    background-color: var(--hospital-green);
-    border: none;
+    background-color: var(--white);
+    border: 1px var(--hospital-green) solid;
+    
     height: 40px;
+    width: 100%;
     font-size: var(--md);
-    color: var(--text-input-field);
+    color: var(--hospital-green);
     cursor: pointer;
     border-radius: 8px;
 }
 @media (max-width: 720px) {
-    .logo {
-        display: block;
+    .container-form {
+        height: 100%;
+        justify-content: space-around;
+    }
+    .container-form div {
+        display: flex;
     }
 }

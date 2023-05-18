@@ -1,0 +1,56 @@
+:root {
+    /* Colores */
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --white: #ffffff;
+    --black: #000;
+    /*Fuentes*/
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+}
+.product-card img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.card-price {
+    font-weight: bold;
+    font-size: var(--md);
+}
+.card-name {
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    margin-top: 4px;
+}

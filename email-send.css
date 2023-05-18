@@ -49,25 +49,17 @@ main {
     color: var(--very-light-pink);
     margin-top: 0;
     margin-bottom: 40px;
+    text-align: center;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.label {
-    font-size: var(--md);
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-.input {
+.icono {
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
     background-color: var(--text-input-field);
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    font-size: var(--sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .buttom {
     background-color: var(--hospital-green);
@@ -77,6 +69,18 @@ form {
     color: var(--text-input-field);
     cursor: pointer;
     border-radius: 8px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.p span {
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--very-light-pink);
+}
+.p a {
+    text-decoration: none;
+    color: var(--hospital-green);
+    font-size: var(--sm);
 }
 @media (max-width: 720px) {
     .logo {

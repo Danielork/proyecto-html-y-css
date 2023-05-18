@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nueva Contrasena</title>
-    <link rel="stylesheet" href="./new-password.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -14,16 +14,16 @@
     <main>
         <div class="container-form">
             <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-            <h1 class="title">Crear una nueva contrasena</h1>
-            <p class="subtitle">Introduce una nueva contrasena para tu cuenta</p>
             <form action="#">
-                <label for="new-password" class="label">Contrasena</label>
+                <label for="email" class="label">Correo Electronico</label>
+                <input type="text" id="email" placeholder="Name@example.com" class="input">
+
+                <label for="password" class="label">Contrasena</label>
                 <input type="password" id="password" placeholder="******" class="input">
 
-                <label for="re-enter--new-password" class="label">Repite la contrasena</label>
-                <input type="password" id="password" placeholder="******" class="input">
-
-                <input type="submit" value="Confirmar" class="buttom">
+                <input type="submit" value="Iniciar sesion" class="buttom">
+                <a href="#">Olvidaste tu contrasena?</a>
+                <button>Inscribirse</button>
             </form>
         </div>
     </main>
